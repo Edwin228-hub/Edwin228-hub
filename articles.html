@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>文章列表 · Leo Lab</title>
+  <meta name="description" content="Leo Lab 的文章合集，按主题与标签浏览。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/articles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>" />
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"><img src="assets/img/leo-lab-logo.jpg" alt="Leo Lab logo" /></span>
+        <span class="brand-name">Leo <span class="gold">Lab</span></span>
+      </a>
+      <nav class="nav-links" aria-label="主导航">
+        <a href="index.html#works">作品</a>
+        <a href="index.html#quotes">金句</a>
+        <a href="index.html#about">关于</a>
+        <a href="index.html#contact" class="nav-cta">联系我</a>
+      </nav>
+      <button class="nav-toggle" aria-label="打开菜单" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="articles-hero">
+      <div class="container">
+        <a class="articles-back" href="index.html#works">← 返回首页</a>
+        <p class="section-kicker">Articles</p>
+        <h1 class="articles-title">文章合集</h1>
+        <p class="articles-sub">关于复利、认知、AI 与生活。选一个你感兴趣的主题，慢慢读。</p>
+      </div>
+    </section>
+
+    <section class="articles-main">
+      <div class="container">
+        <!-- 分类 Tab -->
+        <div class="filter-cats" id="filterCats" role="tablist" aria-label="文章分类">
+          <button class="cat-btn active" data-cat="all" role="tab">全部</button>
+          <button class="cat-btn" data-cat="复利" role="tab">复利 · 杠杆</button>
+          <button class="cat-btn" data-cat="财富" role="tab">财富 · 认知</button>
+          <button class="cat-btn" data-cat="生活" role="tab">生活 · 成长</button>
+          <button class="cat-btn" data-cat="AI" role="tab">AI · 效率</button>
+        </div>
+
+        <!-- 标签云 -->
+        <div class="filter-tags" id="filterTags" aria-label="文章标签">
+          <button class="tag-chip active" data-tag="all">全部标签</button>
+          <button class="tag-chip" data-tag="复利">复利</button>
+          <button class="tag-chip" data-tag="杠杆">杠杆</button>
+          <button class="tag-chip" data-tag="财富">财富</button>
+          <button class="tag-chip" data-tag="认知">认知</button>
+          <button class="tag-chip" data-tag="生活">生活</button>
+          <button class="tag-chip" data-tag="AI">AI</button>
+          <button class="tag-chip" data-tag="数字资产">数字资产</button>
+        </div>
+
+        <!-- 文章列表 -->
+        <div class="article-list" id="articleList">
+          <a class="article-item" href="posts/navar-5-signs-of-wealth.html" data-cats="财富,认知" data-tags="财富,认知,复利">
+            <div class="article-item-main">
+              <h2 class="article-item-title">纳瓦尔：人生开始变富的 5 个征兆</h2>
+              <p class="article-item-desc">一个人真正开始变富，最早的变化不是赚得更多，而是开始关心留下什么、盘点经验、沉淀系统。</p>
+              <div class="article-item-meta">
+                <span class="article-item-date">2026-08-05</span>
+                <span class="article-item-tags">
+                  <span class="mini-tag">财富</span>
+                  <span class="mini-tag">认知</span>
+                  <span class="mini-tag">复利</span>
+                </span>
+              </div>
+            </div>
+            <span class="article-item-arrow">→</span>
+          </a>
+
+          <a class="article-item" href="posts/navar-knowledge-base-compound.html" data-cats="复利,AI" data-tags="复利,杠杆,数字资产,AI">
+            <div class="article-item-main">
+              <h2 class="article-item-title">花 1 天做的纳瓦尔知识库，半年 1300 多人订阅</h2>
+              <p class="article-item-desc">半年前花掉的那一天时间，到今天还在产生价值。一次性的劳动，原来有机会变成长期积累的资产。</p>
+              <div class="article-item-meta">
+                <span class="article-item-date">2026-10-10</span>
+                <span class="article-item-tags">
+                  <span class="mini-tag">复利</span>
+                  <span class="mini-tag">杠杆</span>
+                  <span class="mini-tag">数字资产</span>
+                </span>
+              </div>
+            </div>
+            <span class="article-item-arrow">→</span>
+          </a>
+
+          <a class="article-item" href="posts/grant-cardone-marriage.html" data-cats="生活,财富" data-tags="生活,认知,财富">
+            <div class="article-item-main">
+              <h2 class="article-item-title">亿万富翁把婚姻排在金钱前面</h2>
+              <p class="article-item-desc">真正拉开差距的，是你和谁一起过日子。财富能不能留住，风险来了能不能扛住，不只看你一个人。</p>
+              <div class="article-item-meta">
+                <span class="article-item-date">2026-08-24</span>
+                <span class="article-item-tags">
+                  <span class="mini-tag">生活</span>
+                  <span class="mini-tag">认知</span>
+                  <span class="mini-tag">财富</span>
+                </span>
+              </div>
+            </div>
+            <span class="article-item-arrow">→</span>
+          </a>
+        </div>
+
+        <p class="article-empty" id="articleEmpty" hidden>这个分类下暂时还没有文章，换个分类或标签看看吧。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">Leo Lab</p>
+      <p class="footer-copy">© 2026 Leo Lab. Innovation · Discovery · Future.</p>
+      <p class="footer-note">用 AI 把个人能力变成现金流，再把现金流滚成复利资产。</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/articles.js"></script>
+</body>
+</html>
