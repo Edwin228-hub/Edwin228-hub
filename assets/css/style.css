@@ -114,6 +114,25 @@ a { color: inherit; text-decoration: none; }
 /* ---------- 作品卡片 ---------- */
 .works-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
 
+.subsection { margin-bottom: 48px; }
+.subsection:last-child { margin-bottom: 0; }
+.subsection-head {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 24px; padding-bottom: 12px; border-bottom: 1px solid var(--line);
+}
+.subsection-title { font-family: var(--font-serif); font-size: 20px; font-weight: 700; color: var(--navy); letter-spacing: 1px; }
+.subsection-count { font-size: 13px; color: var(--ink-faint); letter-spacing: 1px; }
+
+.course-status {
+  position: absolute; top: 16px; right: 16px;
+  font-size: 12px; letter-spacing: 1px; padding: 4px 12px;
+  border-radius: 999px; font-weight: 600;
+}
+.status-live { background: var(--gold); color: var(--navy); }
+.status-soon { background: var(--surface); color: var(--ink-soft); border: 1px solid var(--line); }
+
+.work-price { font-size: 20px; font-weight: 700; color: var(--gold); font-family: var(--font-serif); }
+
 .work-card {
   background: var(--surface); border: 1px solid var(--line);
   border-radius: var(--radius); overflow: hidden;
