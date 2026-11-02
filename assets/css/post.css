@@ -28,6 +28,16 @@
 .post-body li { margin-bottom: 12px; }
 .post-ending { font-size: 19px; margin-top: 32px; }
 
+.post-figure {
+  margin: 28px 0; text-align: center;
+}
+.post-figure img {
+  max-width: 100%; height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
 .post-footer {
   margin-top: 56px; padding-top: 32px; border-top: 1px solid var(--line);
   text-align: center;
