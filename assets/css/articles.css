@@ -60,6 +60,30 @@
 
 .article-empty { text-align: center; color: var(--ink-faint); padding: 40px 0; font-size: 15px; }
 
+/* 文章总数 */
+.article-list-head {
+  display: flex; align-items: center; justify-content: flex-end;
+  margin-bottom: 8px;
+}
+.article-total { font-size: 14px; color: var(--ink-soft); }
+.article-total strong { color: var(--gold); font-size: 18px; font-family: var(--font-serif); }
+
+/* 分页器 */
+.pagination {
+  display: flex; align-items: center; justify-content: center;
+  gap: 8px; flex-wrap: wrap; margin-top: 36px;
+}
+.page-btn {
+  min-width: 38px; height: 38px; padding: 0 14px;
+  border: 1px solid var(--line); background: var(--surface);
+  border-radius: 8px; font-size: 14px; color: var(--ink-soft);
+  cursor: pointer; transition: all .2s; font-family: inherit;
+}
+.page-btn:hover:not(.disabled) { border-color: var(--navy); color: var(--navy); }
+.page-btn.active { background: var(--navy); color: var(--gold-soft); border-color: var(--navy); }
+.page-btn.disabled { opacity: 0.4; cursor: not-allowed; }
+.page-info { font-size: 13px; color: var(--ink-faint); margin-left: 8px; }
+
 @media (max-width: 640px) {
   .articles-title { font-size: 30px; }
   .article-item-title { font-size: 18px; }
